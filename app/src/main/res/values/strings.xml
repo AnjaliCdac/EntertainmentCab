@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EntertainmentCab</string>
+    <string name="main_activity">main_activity</string>
+    <string name="image_upload">image_upload</string>
+    <string name="image_display">image_display</string>
+    <string name="welcom">W\nE\nL\nC\nO\nM\nE</string>
+    <string name="image_upload_video">image_upload_video</string>
+</resources>

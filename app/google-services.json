@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016129558860",
+    "firebase_url": "https://entertainmentcab-3ce53.firebaseio.com",
+    "project_id": "entertainmentcab-3ce53",
+    "storage_bucket": "entertainmentcab-3ce53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016129558860:android:684ebdf35e9d81761217e9",
+        "android_client_info": {
+          "package_name": "com.example.entertainmentcab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016129558860-d3bes11d3ked0eod4ge03fb639bp4qu7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.entertainmentcab",
+            "certificate_hash": "9a64ade8383accb8a5edbe4030ed82c33c1af3a2"
+          }
+        },
+        {
+          "client_id": "1016129558860-bihbq8knn6r1msa7pf3nmnc7ahc83vc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsQYvzOKyp19XfDyxhZ2z8Bu9wrGhRoCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016129558860-bihbq8knn6r1msa7pf3nmnc7ahc83vc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

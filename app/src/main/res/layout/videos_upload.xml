@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.ImagesUploadActivity">
+
+    <Button
+        android:id="@+id/button_choose_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Video"
+        android:gravity="center"
+        android:onClick="record"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter file name"
+        android:id="@+id/editText_file_name_video"
+        android:layout_toEndOf="@+id/button_choose_video"
+        android:layout_marginStart="16dp"/>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_view"
+        android:layout_below="@+id/editText_file_name_video"
+        android:layout_above="@+id/progress_bar"
+        android:layout_marginStart="16dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar_video"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_above="@+id/button_upload_video"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_upload_video"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Upload"
+        android:onClick="upload"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

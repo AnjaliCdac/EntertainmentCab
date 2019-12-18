@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_width">0dp</dimen>
+    <dimen name="textview_height">15dp</dimen>
+    <dimen name="text_size">10sp</dimen>
+    <dimen name="imageview_layout_marginleft">4dp</dimen>
+    <dimen name="imageview_layout_width">72dp</dimen>
+    <dimen name="imageview_layout_height">64dp</dimen>
+    <dimen name="linearlayout_1">0dp</dimen>
+
+
+    <dimen name="recyclerview_layout_margin">2dp</dimen>
+
+    <dimen name="cabent_layout_margin">4dp</dimen>
+    <dimen name="cabent_textsize">15sp</dimen>
+
+    <dimen name="linearlayout_5_width">0dp</dimen>
+    <dimen name="layout_margin">15dp</dimen>
+    <dimen name="border_width">2dp</dimen>
+    <dimen name="layout_imageview_height">100dp</dimen>
+    <dimen name="textview_h">20dp</dimen>
+    <dimen name="textview_size">15sp</dimen>
+    <dimen name="itemview_height">90dp</dimen>
+    <dimen name="itemview_width">100dp</dimen>
+    <dimen name="itemview_topmargin">2dp</dimen>
+    <dimen name="itemview_height_music">120dp</dimen>
+    <dimen name="itemview_width_music">160dp</dimen>
+    <dimen name="layout_videoview_height">80dp</dimen>
+    <dimen name="layout_videoview_width">140dp</dimen>
+    <dimen name="button_play_width">52dp</dimen>
+    <dimen name="button_play_height">35dp</dimen>
+    <dimen name="button_text_size">10sp</dimen>
+    <dimen name="itemview_height_video">120dp</dimen>
+    <dimen name="itemview_width_video">160dp</dimen>
+
+
+</resources>
