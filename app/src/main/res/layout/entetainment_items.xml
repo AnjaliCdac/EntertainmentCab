@@ -23,7 +23,7 @@
             android:layout_height="@dimen/button_play_height"
             android:layout_below="@+id/video_view_video"
             android:textSize="@dimen/button_text_size"
-            android:text="Play" />
+            android:text="PLAY" />
 
         <Button
             android:id="@+id/button_pause_video"
@@ -31,6 +31,6 @@
             android:layout_height="@dimen/button_play_height"
             android:layout_below="@+id/video_view_video"
             android:textSize="@dimen/button_text_size"
-            android:text="Pause" />
+            android:text="PAUSE" />
     </LinearLayout>
 </LinearLayout>
