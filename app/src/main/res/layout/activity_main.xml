@@ -94,7 +94,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/special_offer_image"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/imageview_layout_height"
+            android:layout_height="166dp"
             android:layout_weight="1"
             android:background="@color/light_orange"
             android:src="@drawable/special"

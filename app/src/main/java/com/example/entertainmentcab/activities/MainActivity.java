@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2,
                 GridLayoutManager.HORIZONTAL, false);
+        String email = getIntent().getExtras().getString("email");
         mDbReference = FirebaseDatabase.getInstance().getReference().child("uploads");
         mImageViewQRCode = (ImageView) findViewById(R.id.img_qr);
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -62,11 +63,12 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
                     Upload upload = dataSnapshot1.getValue(Upload.class);
-                    if(upload.getmName().equalsIgnoreCase("qr")){
+                    /*if(upload.getmName().equalsIgnoreCase("qr")){
                         setQRCode(upload.getImageUrl());
-                    } else {
+                    }*/
+                    //else {
                         mUpload.add(upload);
-                    }
+                   // }
                   mProgressbar.setVisibility(View.VISIBLE);
                 }
                 mImageAdapter = new ImageAdapter(MainActivity.this, mUpload);
@@ -103,6 +105,13 @@ public class MainActivity extends AppCompatActivity {
                // Toast.makeText(MainActivity.this,"Coming Soon",Toast.LENGTH_SHORT).show();
             }
         });
+        if(!email.equals(""))
+        {
+            new ImageDownloaderTask(mImageViewQRCode).execute("https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data="+email);
+        }
+        else {
+            Toast.makeText(MainActivity.this,"enter something!",Toast.LENGTH_LONG).show();
+        }
     }
 
     private void setQRCode(String imageUrl) {
